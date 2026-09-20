@@ -1,0 +1,53 @@
+/* Reseteo y Base */
+html, body {
+    height: 100%;
+    width: 100%;
+    /* El modo oscuro es manejado nativamente por data-bs-theme="dark" en HTML */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Utilidades Tipográficas Pro */
+.letter-spacing {
+    letter-spacing: 0.1rem;
+}
+
+/* Transiciones Suaves */
+a, button, .card, .badge {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Interacción de Tarjetas (Cards) */
+.hover-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-card:hover {
+    transform: translateY(-5px);
+    /* Sombra oscura más pronunciada para resaltar sobre el fondo negro */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.5) !important; 
+}
+
+/* Enlaces limpios */
+.hover-link:hover {
+    color: #dc3545 !important; /* Rojo Bootstrap */
+    opacity: 0.8;
+}
+.hover-nav:hover {
+    color: #dc3545 !important;
+}
+
+/* Espacio Publicitario Minimalista (Borde Punteado) */
+.ad-space {
+    border: 2px dashed #495057; /* Gris oscuro para el modo dark */
+}
+
+/* Formulario - Removiendo bordes de Bootstrap al enfocar */
+.form-control:focus {
+    border-color: #dc3545 !important; /* Acento rojo abajo al escribir */
+    box-shadow: none !important;
+}
+
+/* Asegurar que las labels flotantes se vean bien en modo oscuro */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #dc3545 !important;
+}

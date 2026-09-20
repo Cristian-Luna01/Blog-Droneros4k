@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Sitio del Blog - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-body">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary-subtle">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand fw-bold text-uppercase tracking-wide" href="index.html">Droneros<span class="text-danger">4K</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger fw-semibold" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-light hover-nav" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-light hover-nav" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CUERPO PRINCIPAL -->
+    <section class="container-fluid flex-grow-1 d-flex flex-column px-lg-5 py-4">
+        <div class="row flex-grow-1">
+            
+            <!-- Izquierda: Publicidad -->
+            <aside class="col-12 col-lg-2 d-none d-lg-block">
+                <div class="ad-space h-100 rounded d-flex flex-column justify-content-center align-items-center text-secondary p-4 text-center bg-body-tertiary">
+                    <small class="text-uppercase fw-bold letter-spacing">Espacio Publicitario</small>
+                    <span class="fs-6 mt-2 opacity-75">Disponible</span>
+                </div>
+            </aside>
+
+            <!-- Centro: Contenido Principal -->
+            <main class="col-12 col-lg-7 px-lg-4">
+                <header class="mb-5 border-bottom border-secondary-subtle pb-4">
+                    <h1 class="display-5 fw-bold mb-3">Bitácora de Vuelo</h1>
+                    <p class="lead text-secondary">Explorando el mundo desde arriba. Análisis técnico, cuidados, normativas y consejos de vuelo para exprimir al máximo tus dispositivos aéreos.</p>
+                </header>
+
+                <!-- Artículo 1 -->
+                <article class="card mb-4 border-secondary-subtle shadow-sm hover-card bg-body-tertiary">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5">
+                            <img src="Pic/original.jpeg" class="img-fluid rounded-start h-100 object-fit-cover" style="min-height: 250px;" alt="Drone en vuelo">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body p-4">
+                                <span class="badge bg-danger text-uppercase fw-semibold mb-3">Reseña</span>
+                                <h2 class="card-title h4 fw-bold">Potensic Atom 2 en la práctica</h2>
+                                <p class="card-text text-secondary">Mi experiencia con este dron sub-250g. Cómo se comporta su estabilización 4K frente a vientos de nivel 5 y configuraciones ideales de cámara para obtener tomas cinemáticas.</p>
+                                <p class="card-text"><small class="text-muted fw-light">Publicado el 15 Oct · Por Cristian</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="card mb-4 border-secondary-subtle shadow-sm hover-card bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <span class="badge bg-secondary text-uppercase fw-semibold mb-3">Hardware</span>
+                        <h2 class="card-title h4 fw-bold">El setup de energía perfecto en campo</h2>
+                        <p class="card-text text-secondary mb-4">¿Por qué un Power Bank de 20000mAh (18W) es indispensable en tu mochila? Optimizando la carga rápida de baterías en locaciones remotas donde no hay acceso a tomas de corriente.</p>
+                        <p class="card-text"><small class="text-muted fw-light">Publicado el 02 Oct · Por Cristian</small></p>
+                    </div>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="card mb-4 border-secondary-subtle shadow-sm hover-card bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <span class="badge bg-secondary text-uppercase fw-semibold mb-3">Mantenimiento</span>
+                        <h2 class="card-title h4 fw-bold">Cuidados básicos: Alargando la vida de tus motores</h2>
+                        <p class="card-text text-secondary mb-4">El polvo y la humedad son los peores enemigos de los motores brushless. Aprende rutinas de limpieza post-vuelo, cómo revisar la integridad de las hélices para evitar vibraciones (Jello effect) y la forma correcta de almacenar baterías LiPo a largo plazo.</p>
+                        <p class="card-text"><small class="text-muted fw-light">Publicado el 28 Sep · Por Cristian</small></p>
+                    </div>
+                </article>
+
+                <!-- Artículo 4 -->
+                <article class="card mb-4 border-secondary-subtle shadow-sm hover-card bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <span class="badge bg-secondary text-uppercase fw-semibold mb-3">Guía de Vuelo</span>
+                        <h2 class="card-title h4 fw-bold">Situaciones extremas: Viento y Altitud</h2>
+                        <p class="card-text text-secondary mb-4">Volar en alta montaña o en zonas costeras requiere preparación. Conoce cómo la densidad del aire afecta la sustentación, por qué debes monitorear el índice Kp para evitar interferencias GPS y cómo recuperar el control en modo ATTI.</p>
+                        <p class="card-text"><small class="text-muted fw-light">Publicado el 15 Sep · Por Cristian</small></p>
+                    </div>
+                </article>
+
+                <!-- Artículo 5 -->
+                <article class="card mb-4 border-secondary-subtle shadow-sm hover-card bg-body-tertiary">
+                    <div class="card-body p-4">
+                        <span class="badge bg-secondary text-uppercase fw-semibold mb-3">Tecnología</span>
+                        <h2 class="card-title h4 fw-bold">Tipos de Drones: ¿Cinemático o FPV?</h2>
+                        <p class="card-text text-secondary mb-4">No todos los drones sirven para lo mismo. Descubre las diferencias entre drones estabilizados con GPS (ideales para fotografía y fotogrametría) y los drones FPV (First Person View) diseñados para acrobacias, inspecciones dinámicas y carreras.</p>
+                        <p class="card-text"><small class="text-muted fw-light">Publicado el 05 Sep · Por Cristian</small></p>
+                    </div>
+                </article>
+            </main>
+
+            <!-- Derecha: Noticias -->
+            <aside class="col-12 col-lg-3 mt-4 mt-lg-0">
+                <div class="bg-body-tertiary rounded border border-secondary-subtle shadow-sm p-4 h-100">
+                    <h3 class="h6 text-uppercase fw-bold text-light mb-4 letter-spacing">Radar de Noticias</h3>
+                    <div class="d-flex flex-column gap-4">
+                        <div>
+                            <a href="#" class="text-decoration-none text-light fw-bold d-block hover-link">Nuevos Sensores LIDAR</a>
+                            <span class="text-secondary small">La miniaturización permite topografía en drones de consumo.</span>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none text-light fw-bold d-block hover-link">Regulaciones 2026</a>
+                            <span class="text-secondary small">Nuevas normativas de identificación remota (Remote ID) obligatorias.</span>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none text-light fw-bold d-block hover-link">Baterías de Estado Sólido</a>
+                            <span class="text-secondary small">Prometen aumentar el tiempo de vuelo hasta en un 40%.</span>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none text-light fw-bold d-block hover-link">Zonas GEO Actualizadas</a>
+                            <span class="text-secondary small">Revisa el mapa de restricción de aeropuertos antes de despegar.</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light border-top border-secondary-subtle py-4 mt-auto">
+        <div class="container-fluid px-lg-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span class="mb-2 mb-md-0 fw-light text-secondary">© 2026 Cristian Hernández Luna</span>
+            <span class="mb-2 mb-md-0 text-uppercase letter-spacing small fw-bold">El Sitio del Blog</span>
+            <a href="mailto:droneros4k@gmail.com" class="text-light text-decoration-none hover-link">droneros4k@gmail.com</a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

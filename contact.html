@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Sitio del Blog - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-body">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary-subtle">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand fw-bold text-uppercase tracking-wide" href="index.html">Droneros<span class="text-danger">4K</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-light hover-nav" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-light hover-nav" href="about.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger fw-semibold" aria-current="page" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CUERPO PRINCIPAL -->
+    <section class="container-fluid flex-grow-1 d-flex flex-column px-lg-5 py-4">
+        <div class="row flex-grow-1">
+            
+            <aside class="col-12 col-lg-2 d-none d-lg-block">
+                <div class="ad-space h-100 rounded d-flex flex-column justify-content-center align-items-center text-secondary p-4 text-center bg-body-tertiary">
+                    <small class="text-uppercase fw-bold letter-spacing">Espacio Publicitario</small>
+                </div>
+            </aside>
+
+            <main class="col-12 col-lg-7 px-lg-4 d-flex justify-content-center align-items-center">
+                <div class="bg-body-tertiary p-5 rounded border border-secondary-subtle shadow-sm w-100">
+                    <div class="mb-5 text-center">
+                        <h2 class="display-6 fw-bold mb-2">Conectemos</h2>
+                        <p class="text-secondary fw-light">Sugerencias de contenido, dudas sobre regulaciones o peticiones de código. Escribe tu mensaje abajo.</p>
+                    </div>
+                    
+                    <!-- ALERTA DE BOOTSTRAP -->
+                    <div id="alerta-mensaje" class="alert alert-success border-0 alert-dismissible fade show d-none shadow-sm" role="alert">
+                        <strong>Transmisión exitosa.</strong> El mensaje ha sido recibido, responderé a la brevedad.
+                        <button type="button" class="btn-close" aria-label="Close" onclick="ocultarAlerta()"></button>
+                    </div>
+
+                    <!-- FORMULARIO MINIMALISTA CON FLOATING LABELS -->
+                    <form id="formulario-contacto" onsubmit="mostrarAlerta(event)">
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control bg-transparent border-0 border-bottom border-secondary rounded-0 px-0 shadow-none text-light" id="correo" required placeholder="nombre@ejemplo.com">
+                            <label for="correo" class="px-0 text-secondary">Correo electrónico</label>
+                        </div>
+                        <div class="form-floating mb-5">
+                            <textarea class="form-control bg-transparent border-0 border-bottom border-secondary rounded-0 px-0 shadow-none text-light" id="mensaje" required placeholder="Escribe tu mensaje..." style="height: 120px; resize: none;"></textarea>
+                            <label for="mensaje" class="px-0 text-secondary">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-lg w-100 rounded-pill fw-bold text-uppercase letter-spacing fs-6 py-3">Enviar transmisión</button>
+                    </form>
+                </div>
+            </main>
+
+            <aside class="col-12 col-lg-3 mt-4 mt-lg-0">
+                <div class="bg-body-tertiary rounded border border-secondary-subtle shadow-sm p-4 h-100">
+                    <h3 class="h6 text-uppercase fw-bold text-light mb-4 letter-spacing">Contacto Directo</h3>
+                    <p class="text-secondary fw-light mb-4">Para consultas sobre colaboraciones, integraciones de hardware o reseñas técnicas de equipo, envíame un correo directo.</p>
+                    <a href="mailto:droneros4k@gmail.com" class="text-danger fw-bold text-decoration-none fs-5 hover-link">droneros4k@gmail.com</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light border-top border-secondary-subtle py-4 mt-auto">
+        <div class="container-fluid px-lg-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span class="mb-2 mb-md-0 fw-light text-secondary">© 2026 Cristian Hernández Luna</span>
+            <span class="mb-2 mb-md-0 text-uppercase letter-spacing small fw-bold">El Sitio del Blog</span>
+            <a href="mailto:droneros4k@gmail.com" class="text-light text-decoration-none hover-link">droneros4k@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
