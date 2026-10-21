@@ -1,3 +1,24 @@
+/* Legibilidad y adaptación de la demo, conservando su diseño oscuro. */
+:root, [data-bs-theme="dark"] { --bs-secondary-rgb: 178, 185, 194; --bs-secondary-color: #b2b9c2; }
+main, aside, .card-body { min-width: 0; }
+a[href^="mailto:"] { overflow-wrap: anywhere; }
+aside a[href^="mailto:"] { font-size: 1rem !important; }
+.card img { width: 100%; }
+.navbar-toggler, .btn-close { min-width: 44px; min-height: 44px; }
+a:focus-visible, button:focus-visible { outline: 2px solid #ee6b78; outline-offset: 4px; }
+.form-control:focus-visible { outline: 2px solid #ee6b78; outline-offset: 4px; }
+@media (max-width: 767.98px) {
+    main > .p-5 { padding: 24px 20px !important; }
+    .card .rounded-start { border-radius: var(--bs-card-border-radius) var(--bs-card-border-radius) 0 0 !important; }
+    h1, h2 { overflow-wrap: anywhere; }
+    .navbar-nav { gap: 0 !important; padding-top: 12px; }
+    .navbar-nav .nav-link { padding-block: 12px; }
+    .card-body.p-4 { padding: 20px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    .hover-card:hover { transform: none; }
+}
 /* Reseteo y Base */
 html, body {
     height: 100%;
